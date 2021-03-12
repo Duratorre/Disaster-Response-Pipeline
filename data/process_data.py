@@ -1,16 +1,43 @@
 import sys
+import pandas as pd
+from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath):
-    pass
+
+    messages = pd.read_csv(messages_filepath)
+    categories = pd.read_csv(categories_filepath)
+    df = messages.merge(categories, how='inner', on=['id'])
+
+    return df
 
 
 def clean_data(df):
-    pass
+
+    categories = df.categories.str.split(';', expand=True)
+    row = categories.iloc[0]
+    category_colnames = row.apply(lambda x: x[:-2])
+    categories.columns = category_colnames
+
+    for column in categories:
+        # set each value to be the last character of the string
+        categories[column] = categories[column].str[-1]
+
+        # convert column from string to numeric
+        categories[column] = categories[column].astype(int)
+
+    df.drop(columns=['categories'], inplace=True)
+    df = df.join(categories)
+    df.drop_duplicates(inplace=True)
+
+    return df
 
 
-def save_data(df, database_filename):
-    pass  
+def save_data(df, database_filepath):
+
+    engine = create_engine('sqlite:///{}'.format(database_filepath))
+    df.to_sql('etl_data', engine, index=False, if_exists='replace')
+
 
 
 def main():
@@ -24,12 +51,12 @@ def main():
 
         print('Cleaning data...')
         df = clean_data(df)
-        
+
         print('Saving data...\n    DATABASE: {}'.format(database_filepath))
         save_data(df, database_filepath)
-        
+
         print('Cleaned data saved to database!')
-    
+
     else:
         print('Please provide the filepaths of the messages and categories '\
               'datasets as the first and second argument respectively, as '\
