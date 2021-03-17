@@ -72,7 +72,7 @@ def clean_data(df):
 def save_data(df, database_filepath):
     '''
     This function takes as input a pandas dataframe and the directory of a sqlite database
-    and save the dataframe into the sqlite database
+    and saves the dataframe into the sqlite database
 
     Input:
     df - a pandas dataframes
