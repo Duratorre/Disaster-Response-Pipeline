@@ -72,11 +72,6 @@ def tokenize(text):
     lemmatizer = WordNetLemmatizer()
 
     # iterate through each token
-    # out_tokens = []
-    # for token in tokens:
-    #     # lemmatize and remove leading/trailing white spaces
-    #     clean_token = WordNetLemmatizer().lemmatize(token).strip()
-    #     out_tokens.append(clean_token)
     out_tokens = [WordNetLemmatizer().lemmatize(token).strip() for token in tokens]
 
     return out_tokens
