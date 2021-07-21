@@ -35,9 +35,9 @@ The project is organized into three folders.
 To run the web app it is necessary to have python installed on your local machine. The following are the steps needed for a Linux OS. If you are using a Windows machine, the actions are the same, just remember to write the whole path to the python.exe application on your machine instead of just 'python'.
 
   1. Go to the project's root directory (i.e. 'cd ../project_root_directory'):
-    a) Run the ETL pipeline with the following command to clean and set up your database
+      - Run the ETL pipeline with the following command to clean and set up your database
         `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-    b) Run the ML pipeline with the following command to train the classifier and save it in a pickle file
+      - Run the ML pipeline with the following command to train the classifier and save it in a pickle file
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`      
   2. Go to the app directory ('cd ./app') and run the following command to run the web app:
         `python run.py`
