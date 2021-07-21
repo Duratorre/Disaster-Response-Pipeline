@@ -99,8 +99,7 @@ def build_model():
 
     # define parameters
     parameters = {
-              'clf__estimator__max_features':['auto', None],
-              'clf__estimator__n_estimators':[5,10,15,20]
+              'clf__estimator__n_estimators':[5,10,20]
              }
 
     # implement cross validation on pipeline parameters
