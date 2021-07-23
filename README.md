@@ -4,7 +4,7 @@
 1. [ Installation. ](#inst)
 2. [ Motivation. ](#motiv)
 3. [ Data. ](#data)
-4. [ Instructions. ](#res)
+4. [ Instructions. ](#ins)
 5. [ Licensing, Authors, Acknowledgement. ](#lic)
 
 <a name="inst"></a>
@@ -30,7 +30,7 @@ The project is organized into three folders.
       - *main.html* is the file containing all the code used to display of the main page of the web app
       - *go.html* is the source code of the web page showing classification results once a message is typed in the web app
 
-
+<a name="ins"></a>
 ## 4. Instructions
 To run the web app it is necessary to have python installed on your local machine. The following are the steps needed for a Linux OS. If you are using a Windows machine, the actions are the same, just remember to write the whole path to the python.exe application on your machine instead of just 'python'.
 
@@ -41,9 +41,7 @@ To run the web app it is necessary to have python installed on your local machin
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`      
   2. Go to the app directory ('cd ./app') and run the following command to run the web app:
         `python run.py`
-  4. Go to the following link, where you can interact with the web app:
-        https:\\\
-  5. Have fun with the app!
+
 
 <a name="data"></a>
 ## 5. Acknowledgements
