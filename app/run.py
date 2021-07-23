@@ -19,14 +19,7 @@ app = Flask(__name__)
 
 # define tokenize function
 def tokenize(text):
-    # tokens = word_tokenize(text)
-    # lemmatizer = WordNetLemmatizer()
-    #
-    # clean_tokens = []
-    # for tok in tokens:
-    #     clean_tok = lemmatizer.lemmatize(tok).lower().strip()
-    #     clean_tokens.append(clean_tok)
-    #
+
     # return clean_tokens
     url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     # get all urls
@@ -140,7 +133,7 @@ def go():
     classification_labels = model.predict([query])[0]
     classification_results = dict(zip(df.columns[4:], classification_labels))
 
-    # This will render the go.html Please see that file.
+    # This will render the go.html
     return render_template(
         'go.html',
         query=query,
