@@ -21,10 +21,10 @@ The project is organized into three folders.
   1. _Data_ contains the following files:
       - *disaster_categories.csv* and *disaster_messages.csv* are the datasets respectively about categories and messages
       - *process_data.py* is the ETL pipeline, which takes in the two datasets, merges and cleans them, and outputs a sqlite database
-      - *DisasterResponse.db* is the sqlite database
+      - *DisasterResponse.db* is the sqlite database that will be output from *process_data.py*
   2. _Model_ contains the following files:
       - *train_classifier.py* is the machine learning pipeline, which loads data from the sqlite database, splits it into train and test sets, fits the training data to a model using text processing techniques, tunes the model via GridSearchCV and outputs the model as a pickle file.
-      - *Classifier.pkl* is a pickle file containing the model
+      - *classifier.pkl* is a pickle file containing the model that will be output from *train_classifier.py*
   3. _App_ contains the following files:
       - *run.py* is the file used to run the web application
       - *main.html* is the file containing all the code used to display of the main page of the web app
