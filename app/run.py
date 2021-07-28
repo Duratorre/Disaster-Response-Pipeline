@@ -3,6 +3,7 @@ import plotly
 import pandas as pd
 import re
 import pickle
+import numpy as np
 
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
