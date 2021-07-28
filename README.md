@@ -53,12 +53,12 @@ The first three images come from the main page: the first one displays the box w
 The last screenshot represents the result of a message classification: after the message is typed, the web app shows all the different predicted categories it belongs to.
 
   1. Main page
-  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Insert.jpg?raw=true)
-  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Main1.jpg?raw=true)
-  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Main2.jpg?raw=true)
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Insert.jpg)
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Main1.jpg)
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Main2.jpg)
 
-  2. Result page 
-  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Go.jpg?raw=true)
+  2. Result page
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Go.jpg)
 
 <a name="data"></a>
 ## 6. Acknowledgements
