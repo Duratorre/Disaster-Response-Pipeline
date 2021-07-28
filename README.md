@@ -5,7 +5,8 @@
 2. [ Motivation. ](#motiv)
 3. [ Data. ](#data)
 4. [ Instructions. ](#ins)
-5. [ Licensing, Authors, Acknowledgement. ](#lic)
+5. [ Examples. ](#exs)
+6. [ Licensing, Authors, Acknowledgement. ](#lic)
 
 <a name="inst"></a>
 ## 1. Installation
@@ -41,8 +42,24 @@ To run the web app it is necessary to have python installed on your local machin
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`      
   2. Go to the app directory ('cd ./app') and run the following command to run the web app:
         `python run.py`
+  3. Go to http://0.0.0.0:3001/
 
+<a name="exs"></a>
+## 5. Examples
+Below there are some images taken from the web app.
+
+The first three images come from the main page: the first one displays the box where to insert the message to be classified, the second one shows the distribution of message genres and the top 5 message categories in the training data, while the third shows the distribution of message length used in the training data.
+
+The last screenshot represents the result of a message classification: after the message is typed, the web app shows all the different predicted categories it belongs to.
+
+  1. Main page
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Insert.jpg?raw=true)
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Main1.jpg?raw=true)
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Main2.jpg?raw=true)
+
+  2. Result page 
+  ![alt text](https://github.com/Duratorre/Disaster-Response-Pipeline/blob/master/Web_App_Go.jpg?raw=true)
 
 <a name="data"></a>
-## 5. Acknowledgements
+## 6. Acknowledgements
 Credit to Udacity and Figure Eight for providing the data, and giving precious insights into how to set up the web app. Code used in this repository can be used freely.
