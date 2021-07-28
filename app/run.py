@@ -20,27 +20,15 @@ app = Flask(__name__)
 
 # define tokenize function
 def tokenize(text):
-
-    # return clean_tokens
-    url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-    # get all urls
-    urls = re.findall(url_regex, text)
-
-    # replace all urls
-    for url in urls:
-        text = text.replace(url, '')
-
-    # remove all punctuations
-    text = re.sub(r"[^a-zA-Z0-9]", ' ', text)
-
-    # tokenize text
-    tokens = word_tokenize(text.lower())
-
-    # inizialize lemmatizer
+    tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 
-    # iterate through each token
-    out_tokens = [WordNetLemmatizer().lemmatize(token).strip() for token in tokens]
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+
+    return clean_tokens
 
 # load data
 engine = create_engine('sqlite:///../data/DisasterResponse.db')
