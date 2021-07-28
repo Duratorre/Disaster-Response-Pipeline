@@ -53,11 +53,13 @@ The first three images come from the main page: the first one displays the box w
 The last screenshot represents the result of a message classification: after the message is typed, the web app shows all the different predicted categories it belongs to.
 
   1. Main page
+
   ![WebApp_Insert](https://user-images.githubusercontent.com/48055172/127248512-fa832715-7b56-40d5-8fa8-0e3244d4adbd.JPG)
   ![WebApp_Main1](https://user-images.githubusercontent.com/48055172/127248514-0e99107e-281d-4711-ad1b-5a3ca3b86d22.JPG)
   ![WebApp_Main2](https://user-images.githubusercontent.com/48055172/127248510-023cb5f0-c7a2-4362-b566-ba997e53e368.JPG)
 
   2. Result page
+  
   ![WebApp_Go](https://user-images.githubusercontent.com/48055172/127248472-219470c9-f77a-47b4-b1ba-77c4eff636dc.JPG)
 
 <a name="data"></a>
