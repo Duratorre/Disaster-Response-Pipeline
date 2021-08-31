@@ -42,7 +42,7 @@ To run the web app it is necessary to have python installed on your local machin
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`      
   2. Go to the app directory ('cd ./app') and run the following command to run the web app:
         `python run.py`
-  3. Go to http://0.0.0.0:3001/
+  3. Go to http://localhost:3001/
 
 <a name="exs"></a>
 ## 5. Examples
@@ -59,7 +59,7 @@ The last screenshot represents the result of a message classification: after the
   ![WebApp_Main2](https://user-images.githubusercontent.com/48055172/127248510-023cb5f0-c7a2-4362-b566-ba997e53e368.JPG)
 
   2. Result page
-  
+
   ![WebApp_Go](https://user-images.githubusercontent.com/48055172/127248472-219470c9-f77a-47b4-b1ba-77c4eff636dc.JPG)
 
 <a name="data"></a>
